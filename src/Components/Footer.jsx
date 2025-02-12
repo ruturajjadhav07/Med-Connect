@@ -5,7 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 const Footer = () => {
   return (
     <div className="text-center position-absolute bottom-0 start-50 translate-middle-x w-100">
-      <div className="row">
+      <div className="">
         <div className="container col-md-10">
           <hr />
           <div className="d-flex justify-content-between fs-4">
