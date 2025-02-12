@@ -18,7 +18,7 @@ const Footer = () => {
               <a className="bi bi-twitter-x text-muted" href="" />
               <a className="bi bi-instagram text-muted" href="" />
             </p>
-          </div>
+          </div> 
         </div>
       </div>
     </div>
