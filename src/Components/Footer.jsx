@@ -5,7 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 const Footer = () => {
   return (
     <div className="text-center position-absolute bottom-0 start-50 translate-middle-x w-100">
-      <div className="row">
+      <div className="">
         <div className="container col-md-10">
           <hr />
           <div className="d-flex justify-content-between fs-4">
@@ -18,7 +18,7 @@ const Footer = () => {
               <a className="bi bi-twitter-x text-muted" href="" />
               <a className="bi bi-instagram text-muted" href="" />
             </p>
-          </div>
+          </div> 
         </div>
       </div>
     </div>
