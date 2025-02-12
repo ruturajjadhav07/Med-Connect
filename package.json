@@ -2,7 +2,7 @@
   "name": "med",
   "private": true,
   "version": "0.0.0",
-  "type": "module", 
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.6",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  }, 
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5"
+  },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "@types/react": "^19.0.8",
