@@ -14,8 +14,8 @@ const Main = () => {
 
   return (
     <div
-      className="container col-md-10 text-white"
-      style={{ fontFamily: "monospace", marginTop: "30px" }}
+      className="container col-md-10 text-white d-flex flex-column min-vh-100"
+      style={{ fontFamily: "monospace", marginTop: "0px" }}
     >
       <h1 className="text-center my-3">
         🏥 Welcome to <span style={{ color: "#28a745" }}>Med Connect</span> 💊
