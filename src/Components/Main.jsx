@@ -15,25 +15,34 @@ const Main = () => {
   return (
     <div
       className="container col-md-10 text-white"
-      style={{ fontFamily: "monospace", marginTop: "100px" }}
+      style={{ fontFamily: "monospace", marginTop: "30px" }}
     >
-      <h1 className="text-center mt-4">
+      <h1 className="text-center my-3">
         🏥 Welcome to <span style={{ color: "#28a745" }}>Med Connect</span> 💊
       </h1>
       <p className="text-center fs-4 mx-2 my-4">
-        Find nearby medical stores and pharmacies instantly with{" "}
         <strong>
-          <span style={{ color: "#28a745" }}>Med Connect</span>
+          Find nearby medical stores and pharmacies instantly with{" "}
+          <span className="text-success">Med Connect</span>.
         </strong>
         <br />
-        Find medical stores and pharmacies near you.
-        <br />
-        Allow location access or enter a place to search instantly!
+        <strong>Smart search and filters</strong> help you find the best options
+        by{" "}
+        <strong>
+          distance, ratings,
+          <br /> and availability
+        </strong>
+        . Integrated with <strong>Google Maps</strong>, it ensures seamless
+        navigation.
+        <br />{" "}
+        <strong>
+          Hospitals and clinics coming soon! Stay prepared, stay connected!
+        </strong>
       </p>
       <div className="d-flex justify-content-center">
         <button
           type="button"
-          className="btn btn-outline-success rounded d-flex align-items-center justify-content-center"
+          className="btn btn-outline-success rounded d-flex align-items-center justify-content-center my-2 "
           onClick={search}
         >
           Get Started
