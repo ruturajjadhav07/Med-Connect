@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import logo from "/src/assets/logo.jpg";
 import Main from "./Main";
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
           <a className="navbar-brand d-flex align-items-center" href="#">
             <img src={logo} alt="Logo" width="30" height="30" className="m-1" />
             Med Connect
-          </a>
+          </a> 
 
           <button
             className="navbar-toggler"
