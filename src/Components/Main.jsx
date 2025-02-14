@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 import Features from "./Features"
-import Footer from "./Footer";
 
 const Main = () => {
   let navigate = useNavigate();
@@ -55,9 +54,6 @@ const Main = () => {
         </button>
       </div>
       <Features/>
-
-      {/* Footer */}
-      {/* <Footer /> */}
     </div>
   );
 };
