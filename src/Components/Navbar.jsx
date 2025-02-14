@@ -12,7 +12,7 @@ const Navbar = () => {
           <a className="navbar-brand d-flex align-items-center" href="#">
             <img src={logo} alt="Logo" width="30" height="30" className="m-1" />
             Med Connect
-          </a>
+          </a> 
 
           <button
             className="navbar-toggler"
