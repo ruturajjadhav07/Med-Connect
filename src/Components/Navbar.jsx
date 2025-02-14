@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min";
 import logo from "/src/assets/logo.jpg";
 import Main from "./Main";
 const Navbar = () => {
