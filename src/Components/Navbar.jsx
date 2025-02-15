@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { useNavigate } from "react-router-dom";
 
 import logo from "/src/assets/logo.jpg";
 import Main from "./Main";
+
 const Navbar = () => {
   const navigate = useNavigate();
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.style.backgroundColor = isDarkMode ? "black" : "white";
+    document.body.style.color = isDarkMode ? "white" : "black";
+  }, [isDarkMode]);
+
   return (
     <div>
       <div className="bg-light sticky-top">
-        <div className="container ">
-          <nav className="navbar navbar-expand-lg navbar-light ">
+        <div className="container">
+          <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">
               <a className="navbar-brand d-flex align-items-center" href="/">
                 <img
@@ -52,12 +60,21 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a
+                    <button
                       className="nav-link active btn"
                       onClick={() => navigate("/signin")}
                     >
                       Sign In
-                    </a>
+                    </button>
+                  </li>
+                  {/* Theme Toggle Icon */}
+                  <li className="nav-item">
+                    <button
+                      className="nav-link active btn border-0"
+                      onClick={() => setIsDarkMode(!isDarkMode)}
+                    >
+                      <i className={`bi ${isDarkMode ? "bi-moon" : "bi-brightness-high"}`}></i>
+                    </button>
                   </li>
                 </ul>
               </div>

@@ -1,9 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import supabase from "../Config/SupabaseCon";
 
 const Footer = () => {
+  const [form, setForm] = useState({ email: "", query: "" });
+
+  const submit = async () => {
+    if (!form.email || !form.query) {
+      alert("empty query cannot submitted");
+      return;
+    }
+
+    const { data, error } = await supabase
+      .from("userquery")
+      .insert([{ email: form.email, query: form.query }]);
+
+    if (error) {
+      alert("Something went wrong");
+    } else {
+      
+      alert("Submitted Successfully");
+      setForm({ email: "", query: "" });
+    }
+  };
   const year = new Date().getFullYear();
+
   return (
     <div className="bg-light mt-2">
       <footer className="container col-md-10 p-2">
@@ -30,14 +52,27 @@ const Footer = () => {
             {/* <div className="col-md-6"><h3>Section</h3></div> */}
           </div>
           <div className="col-md-4">
-            <h3>Share Your Query</h3>
-            <div className="d-flex gap-1">
+            <h3 className="text-center">Share Your Query</h3>
+            <div className="">
               <input
-                className="form-control"
+                className="form-control mb-2"
+                placeholder="Enter Email"
+                type="email"
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                required
+              />
+              <input
+                className="form-control mb-2"
                 placeholder="Enter Query"
                 type="text"
+                value={form.query}
+                onChange={(e) => setForm({ ...form, query: e.target.value })}
+                required
               />
-              <button className="btn btn-primary">Submit</button>
+              <button className="btn btn-primary w-100" onClick={submit}>
+                Submit
+              </button>
             </div>
           </div>
         </div>
