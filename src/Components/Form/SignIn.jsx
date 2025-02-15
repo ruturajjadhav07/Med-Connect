@@ -1,17 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const SignIn = () => {
+  let navigate = useNavigate();
+
+  const signup = (e) => {
+    e.preventDefault();
+    navigate("/signup");
+  };
+
   return (
     <div>
       <div
         className="d-flex justify-content-center align-items-center vh-100 px-3"
-        style={{ backgroundColor: "#E3F2FD" }} 
+        style={{ backgroundColor: "#E3F2FD" }}
       >
         <div
           className="p-4 rounded shadow w-100"
           style={{
-            maxWidth: "380px", 
+            maxWidth: "380px",
             backgroundColor: "#FFFFFF",
             border: "2px solid #74C9C0",
           }}
@@ -46,7 +54,11 @@ const SignIn = () => {
             </div>
 
             <div className="d-flex justify-content-between mb-3">
-              <a href="#" style={{ color: "#74C9C0", textDecoration: "none" }}>
+              <a
+                href="#"
+                style={{ color: "#74C9C0", textDecoration: "none" }}
+                onClick={signup}
+              >
                 Sign Up
               </a>
               <a href="#" style={{ color: "#74C9C0", textDecoration: "none" }}>
