@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Main from "./Components/Main";
 import Search from "./Components/Search";
 import Navbar from "./Components/Navbar";
+import SignIn from "./Components/Form/SignIn";
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navbar />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </Router>
   );

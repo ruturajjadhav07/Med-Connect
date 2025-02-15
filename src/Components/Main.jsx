@@ -15,14 +15,15 @@ const Main = () => {
     <div>
       <div
         className="container col-md-10 d-flex flex-column p-2"
-        style={{ fontFamily: "monospace", marginTop: "30px" }}
+        id="home"
+        style={{ fontFamily: "monospace" }}
       >
-        <h1 className="text-center my-3">
+        <h1 className="text-center" style={{ marginTop: "60px" }}>
           <span
             style={{
               fontSize: "2.5rem",
               fontWeight: "bold",
-              color: "#dc3545",
+              color: "#FF6B6B",
               textShadow: "3px 3px 6px rgba(0,0,0,0.3)",
             }}
           >
@@ -31,10 +32,14 @@ const Main = () => {
         </h1>
 
         {/* Description */}
-        <p className="text-center fs-4 mx-2 my-4">
+        <p className="text-center fs-4 mx-2 my-4 p-3 rounded">
           🏥{" "}
           <strong>
-            Welcome to <span className="text-success">Med Connect</span> 💊
+            Welcome to{" "}
+            <span className="text-success" style={{ color: "#77DD77" }}>
+              Med Connect
+            </span>{" "}
+            💊
           </strong>
           <br />
           Find nearby medical stores instantly with smart search & Google Maps
@@ -49,13 +54,20 @@ const Main = () => {
         <div className="d-flex justify-content-center">
           <button
             type="button"
-            className="btn btn-outline-success rounded-pill px-4 py-2 fs-5 d-flex align-items-center justify-content-center my-2 shadow"
+            className="btn rounded-pill px-4 py-2 fs-5 d-flex align-items-center justify-content-center my-2 shadow"
             onClick={search}
+            style={{
+              backgroundColor: "#A8DADC",
+              color: "#1D3557",
+              border: "none",
+              transition: "background-color 0.3s ease-in-out",
+            }}
+            onMouseOver={(e) => (e.target.style.backgroundColor = "#74C9C0")}
+            onMouseOut={(e) => (e.target.style.backgroundColor = "#A8DADC")}
           >
             🚀 Get Started
           </button>
         </div>
-       
       </div>
       <Features />
     </div>

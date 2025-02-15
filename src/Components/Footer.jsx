@@ -12,15 +12,26 @@ const Footer = () => {
             <div className="col-md-6">
               <h3>Section</h3>
               <ul>
-                <li>Home</li>
-                <li>Features</li>
+                <li>
+                  <a href="#home" className="text-decoration-none text-dark">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#features"
+                    className="text-decoration-none text-dark"
+                  >
+                    Features
+                  </a>
+                </li>
               </ul>
             </div>
             {/* <div className="col-md-6"><h3>Section</h3></div> */}
           </div>
           <div className="col-md-4">
             <h3>Share Your Query</h3>
-            <div className="d-flex gap-2">
+            <div className="d-flex gap-1">
               <input
                 className="form-control"
                 placeholder="Enter Query"
@@ -34,7 +45,10 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-md-6 text-center text-md-start">
             <p className="mb-2">
-              &copy; {year} <span className="text-success">Med Connect</span>
+              &copy; {year}{" "}
+              <a href="" className="text-decoration-none">
+                <span className="text-success">Med Connect</span>
+              </a>
             </p>
           </div>
           <div className="col-md-6 text-center text-md-end">
