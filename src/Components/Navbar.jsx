@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import logo from "/src/assets/logo.jpg";
 import Main from "./Main";
+
+import SignIn from "../Components/Form/SignIn"
 const Navbar = () => {
   return (
     <div>
@@ -10,7 +12,7 @@ const Navbar = () => {
         <div className="container ">
           <nav className="navbar navbar-expand-lg navbar-light ">
             <div className="container-fluid">
-              <a className="navbar-brand d-flex align-items-center" href="#">
+              <a className="navbar-brand d-flex align-items-center" href="/">
                 <img
                   src={logo}
                   alt="Logo"
@@ -39,13 +41,18 @@ const Navbar = () => {
               >
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a className="nav-link active" href="#">
+                    <a className="nav-link active" href="#home" >
                       Home
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active" href="#">
+                    <a className="nav-link active" href="#features">
                       Features
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link active" href="/signin">
+                      Sign In
                     </a>
                   </li>
                 </ul>

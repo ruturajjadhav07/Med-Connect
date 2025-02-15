@@ -4,7 +4,7 @@ import Footer from "./Footer";
 const Features = () => {
   return (
     <div>
-      <div className="container p-4 col-md-10">
+      <div className="container p-4 col-md-10" id="features">
         <h1
           className="text-center fw-bold m-4"
           style={{
@@ -15,7 +15,7 @@ const Features = () => {
           Key Features
         </h1>
         <div className="row g-4">
-          <div className="col-sm-12 col-md-3 ">
+          <div className="col-sm-12  col-md-3 ">
             <div className="card shadow p-4 h-100">
               <div className="card-body text-center">
                 <h3>🔍</h3>
