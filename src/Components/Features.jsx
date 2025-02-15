@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./Footer";
+
 const Features = () => {
   return (
     <div>
@@ -15,7 +16,7 @@ const Features = () => {
           Key Features
         </h1>
         <div className="row g-4">
-          <div className="col-sm-12  col-md-3 ">
+          <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="card shadow p-4 h-100">
               <div className="card-body text-center">
                 <h3>🔍</h3>
@@ -29,7 +30,7 @@ const Features = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-3 ">
+          <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="card shadow p-4 h-100">
               <div className="card-body text-center">
                 <h3>🗺️</h3>
@@ -41,7 +42,7 @@ const Features = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="card shadow p-4 h-100">
               <div className="card-body text-center">
                 <h3>🚑</h3>
@@ -55,7 +56,7 @@ const Features = () => {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-3">
+          <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="card shadow p-4 h-100">
               <div className="card-body text-center">
                 <h3>👩‍⚕️</h3>
