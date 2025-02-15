@@ -1,11 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import { useNavigate } from "react-router-dom";
+
 import logo from "/src/assets/logo.jpg";
 import Main from "./Main";
-
-import SignIn from "../Components/Form/SignIn"
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="bg-light sticky-top">
@@ -41,7 +42,7 @@ const Navbar = () => {
               >
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a className="nav-link active" href="#home" >
+                    <a className="nav-link active" href="#home">
                       Home
                     </a>
                   </li>
@@ -51,7 +52,10 @@ const Navbar = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active" href="/signin">
+                    <a
+                      className="nav-link active btn"
+                      onClick={() => navigate("/signin")}
+                    >
                       Sign In
                     </a>
                   </li>
