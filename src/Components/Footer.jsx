@@ -19,7 +19,6 @@ const Footer = () => {
     if (error) {
       alert("Something went wrong");
     } else {
-      
       alert("Submitted Successfully");
       setForm({ email: "", query: "" });
     }
@@ -90,23 +89,27 @@ const Footer = () => {
             <div className="d-flex justify-content-center justify-content-md-end gap-3">
               <a
                 className="bi bi-linkedin text-dark fs-4"
-                href="#"
+                href="https://www.linkedin.com/in/ruturaj-jadhav-0a250821b/"
                 aria-label="LinkedIn"
+                target="_blank"
               ></a>
               <a
                 className="bi bi-github text-dark fs-4"
-                href="#"
+                href="https://github.com/ruturajjadhav07"
                 aria-label="GitHub"
+                target="_blank"
               ></a>
               <a
                 className="bi bi-twitter-x text-dark fs-4"
-                href="#"
+                href="https://x.com/spoiidermon"
                 aria-label="Twitter"
+                target="_blank"
               ></a>
               <a
                 className="bi bi-instagram text-dark fs-4"
-                href="#"
+                href="https://www.instagram.com/ruturajj_07/"
                 aria-label="Instagram"
+                target="_blank"
               ></a>
             </div>
           </div>

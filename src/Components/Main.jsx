@@ -62,7 +62,7 @@ const Main = () => {
               border: "none",
               transition: "background-color 0.3s ease-in-out",
             }}
-            onMouseOver={(e) => (e.target.style.backgroundColor = "#74C9C0")}
+            onMouseOver={(e) => (e.target.style.backgroundColor = "#CB9DF0")}
             onMouseOut={(e) => (e.target.style.backgroundColor = "#A8DADC")}
           >
             🚀 Get Started

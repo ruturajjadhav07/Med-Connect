@@ -16,9 +16,9 @@ const Features = () => {
           Key Features
         </h1>
         <div className="row g-4">
-          <div className="col-sm-12 col-md-6 col-lg-3">
-            <div className="card shadow p-4 h-100">
-              <div className="card-body text-center">
+          <div className="col-sm-12 col-md-6 col-lg-3" >
+            <div className="card shadow p-4 h-100" >
+              <div className="card-body text-center" >
                 <h3>🔍</h3>
                 <h3 className="card-title fw-bolder">
                   Real-Time Location Search
