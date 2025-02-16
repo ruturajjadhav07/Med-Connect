@@ -11,7 +11,7 @@ const Search = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center flex-column mt-4">
+    <div className="d-flex justify-content-center align-items-center flex-column vh-100">
       <h1 className="text-success">Med Connect 💊</h1>
       <form className="col-md-4 col-sm-8">
         <input
