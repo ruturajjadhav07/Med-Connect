@@ -16,7 +16,7 @@ const Main = () => {
       <div
         className="container col-md-10 d-flex flex-column p-2"
         id="home"
-        style={{ fontFamily: "monospace" }}
+        style={{ fontFamily: "Sans serif " }}
       >
         <h1 className="text-center" style={{ marginTop: "60px" }}>
           <span

@@ -26,7 +26,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="bg-light mt-2">
+    <div className="bg-light mt-2" style={{ fontFamily: "Sans serif " }}>
       <footer className="container col-md-10 p-2">
         <div className="row">
           <div className="col-md-8 d-flex">
@@ -107,7 +107,7 @@ const Footer = () => {
               ></a>
               <a
                 className="bi bi-instagram text-dark fs-4"
-                href="https://www.instagram.com/ruturajj_07/"
+                href="https://www.instagram.com/ruturajj_0  7/"
                 aria-label="Instagram"
                 target="_blank"
               ></a>
