@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="bg-light sticky-top">
+      <div className="bg-light sticky-top" style={{ fontFamily: "Sans serif " }}>
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container-fluid">

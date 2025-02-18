@@ -5,7 +5,7 @@ import Footer from "./Footer";
 const Features = () => {
   return (
     <div>
-      <div className="container p-4 col-md-10" id="features">
+      <div className="container p-4 col-md-10" id="features" style={{ fontFamily: "Sans serif " }}>
         <h1
           className="text-center fw-bold m-4"
           style={{
