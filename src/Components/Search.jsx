@@ -55,7 +55,7 @@ const Search = () => {
       {/* Display Hospital Results */}
       {data && (
         <div className="container mt-3 col-md-4">
-          <h3>Hospitals Nearby:</h3>
+          <h3 className="text-center">Hospitals Nearby</h3>
           <ul className="list-group">
             {data.map((hospital, index) => {
               const { name, suburb, formatted, lon, lat, details } = hospital.properties;
