@@ -7,8 +7,13 @@ const Footer = () => {
   const [form, setForm] = useState({ email: "", query: "" });
 
   const submit = async () => {
-    if (!form.email || !form.query) {
-      alert("empty query cannot submitted");
+    if (!form.email) {
+      alert("Please enter your email");
+      return;
+    }
+
+    if (!form.query) {
+      alert("Empty query cannot submitted");
       return;
     }
 
@@ -55,7 +60,7 @@ const Footer = () => {
             <div className="">
               <input
                 className="form-control mb-2"
-                placeholder="Enter Email"
+                placeholder="Enter Your Email"
                 type="email"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -63,7 +68,7 @@ const Footer = () => {
               />
               <input
                 className="form-control mb-2"
-                placeholder="Enter Query"
+                placeholder="Enter Your Query"
                 type="text"
                 value={form.query}
                 onChange={(e) => setForm({ ...form, query: e.target.value })}
