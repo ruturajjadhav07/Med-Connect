@@ -15,7 +15,9 @@ const Search = () => {
     e.preventDefault();
 
     try {
-      const geoUrl = `https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(location)}&apiKey=${apiKey}`;
+      const geoUrl = `https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(
+        location
+      )}&apiKey=${apiKey}`;
       const geoResponse = await fetch(geoUrl);
       const geoData = await geoResponse.json();
 
@@ -26,7 +28,7 @@ const Search = () => {
 
       const { lat, lon } = geoData.features[0].properties;
       //  Fetch hospitals within 5 km radius
-      const hospitalUrl = `https://api.geoapify.com/v2/places?categories=healthcare.hospital&filter=circle:${lon},${lat},5000&bias=proximity:${lon},${lat}&limit=20&apiKey=${apiKey}`;
+      const hospitalUrl = `https://api.geoapify.com/v2/places?categories=healthcare.hospital&filter=circle:${lon},${lat},5000&bias=proximity:${lon},${lat}&limit=30&apiKey=${apiKey}`;
       const hospitalResponse = await fetch(hospitalUrl);
       const hospitalData = await hospitalResponse.json();
 
@@ -47,7 +49,10 @@ const Search = () => {
           onChange={handleChange}
           value={location}
         />
-        <button className="btn btn-outline-success rounded mt-2 w-100" onClick={SearchLocation}>
+        <button
+          className="btn btn-outline-success rounded mt-2 w-100"
+          onClick={SearchLocation}
+        >
           Search
         </button>
       </form>
@@ -58,18 +63,35 @@ const Search = () => {
           <h3 className="text-center">Hospitals Nearby</h3>
           <ul className="list-group">
             {data.map((hospital, index) => {
-              const { name, suburb, formatted, lon, lat, details } = hospital.properties;
+              const { name, suburb, formatted, lon, lat, details } =
+                hospital.properties;
               const phone = details?.contact?.phone || "Not Available";
+              const email = details?.contact?.email || "Not Available";
               const googleMapsLink = `https://www.google.com/maps?q=${lat},${lon}`;
 
               return (
                 <li key={index} className="list-group-item my-2 border">
                   <strong className="fs-4">{name || "Unknown Hospital"}</strong>
                   <br />
-                  {suburb ? <span><b>Suburb:</b> {suburb} <br /></span> : null}
+                  {suburb ? (
+                    <span>
+                      <b>Suburb:</b> {suburb} <br />
+                    </span>
+                  ) : null}
                   <b>Address:</b> {formatted} <br />
-                  <b>Phone:</b> {phone} <br />
-                  <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
+                  <div className="d-flex justify-content-between">
+                    <div>
+                      <b>Phone:</b> {phone} <br />
+                    </div>
+                    <div>
+                      <b>Email:</b> {email} <br />
+                    </div>
+                  </div>
+                  <a
+                    href={googleMapsLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Open in Google Maps
                   </a>
                 </li>
