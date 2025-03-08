@@ -39,7 +39,7 @@ const Search = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center flex-column mt-4">
+    <div className="d-flex justify-content-center align-items-center flex-column pt-4" style={{minHeight:"100vh"}}>
       <h1 className="text-success">Med Connect 💊</h1>
       <form className="col-md-4 col-sm-8">
         <input
@@ -60,7 +60,7 @@ const Search = () => {
       {/* Display Hospital Results */}
       {data && (
         <div className="container mt-3 col-md-4">
-          <h3 className="text-center">Hospitals Nearby</h3>
+          <h3 className="text-center text-white">Hospitals Nearby</h3>
           <ul className="list-group">
             {data.map((hospital, index) => {
               const { name, suburb, formatted, lon, lat, details } =
@@ -70,7 +70,7 @@ const Search = () => {
               const googleMapsLink = `https://www.google.com/maps?q=${lat},${lon}`;
 
               return (
-                <li key={index} className="list-group-item my-2 border">
+                <li key={index} className="list-group-item my-2 border bg-dark text-white">
                   <strong className="fs-4">{name || "Unknown Hospital"}</strong>
                   <br />
                   {suburb ? (
