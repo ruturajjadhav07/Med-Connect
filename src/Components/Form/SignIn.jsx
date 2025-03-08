@@ -14,10 +14,11 @@ const SignIn = () => {
     <div>
       <div
         className="d-flex justify-content-center align-items-center vh-100 px-3"
-        style={{ backgroundColor: "#E3F2FD", fontFamily: "Sans serif " }}
+        style={{ backgroundColor: "#121216", fontFamily: "Sans serif " }}
+        // #E3F2FD
       >
         <div
-          className="p-4 rounded shadow w-100"
+          className="p-4 rounded shadow w-100"  
           style={{
             maxWidth: "380px",
             backgroundColor: "#FFFFFF",

@@ -10,10 +10,10 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
-    document.body.style.backgroundColor = isDarkMode ? "black" : "white";
-    document.body.style.color = isDarkMode ? "white" : "black";
-  }, [isDarkMode]);
+  // useEffect(() => {
+  //   document.body.style.backgroundColor = isDarkMode ? "black" : "white";
+  //   document.body.style.color = isDarkMode ? "white" : "black";
+  // }, [isDarkMode]);
 
   return (
     <div>
@@ -68,14 +68,14 @@ const Navbar = () => {
                     </button>
                   </li>
                   {/* Theme Toggle Icon */}
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <button
                       className="nav-link active btn border-0"
                       onClick={() => setIsDarkMode(!isDarkMode)}
                     >
                       <i className={`bi ${isDarkMode ? "bi-moon" : "bi-brightness-high"}`}></i>
                     </button>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
