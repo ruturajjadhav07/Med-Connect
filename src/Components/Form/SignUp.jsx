@@ -6,7 +6,7 @@ const SignUp = () => {
     <div>
       <div
         className="d-flex justify-content-center align-items-center vh-100 px-3"
-        style={{ backgroundColor: "#E3F2FD", fontFamily: "Sans serif " }}
+        style={{ backgroundColor: "#121216", fontFamily: "Sans serif " }}
       >
         <div
           className="p-4 rounded shadow w-100"

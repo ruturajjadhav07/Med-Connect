@@ -32,7 +32,7 @@ const Main = () => {
         </h1>
 
         {/* Description */}
-        <p className="text-center fs-4 mx-2 my-4 p-3 rounded">
+        <p className="text-center fs-4 mx-2 my-4 p-3 rounded text-white">
           🏥{" "}
           <strong>
             Welcome to{" "}

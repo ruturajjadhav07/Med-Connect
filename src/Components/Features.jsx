@@ -7,7 +7,7 @@ const Features = () => {
     <div>
       <div className="container p-4 col-md-10" id="features" style={{ fontFamily: "Sans serif " }}>
         <h1
-          className="text-center fw-bold m-4"
+          className="text-center text-white fw-bold m-4"
           style={{
             fontSize: "2.5rem",
             textShadow: "3px 3px 6px rgba(0,0,0,0.3)",

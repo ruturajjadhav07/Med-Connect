@@ -31,22 +31,23 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="bg-light mt-2" style={{ fontFamily: "Sans serif " }}>
+    <div className=" mt-2" style={{ fontFamily: "Sans serif " }}>
       <footer className="container col-md-10 p-2">
+        <hr className="opacity-100" />
         <div className="row">
           <div className="col-md-8 d-flex">
-            <div className="col-md-6">
-              <h3>Section</h3>
+            <div className="col-md-6 ">
+              <h3 className="text-white">Section</h3>
               <ul>
-                <li>
-                  <a href="#home" className="text-decoration-none text-dark">
+                <li className="text-white">
+                  <a href="#home" className="text-decoration-none text-white">
                     Home
                   </a>
                 </li>
-                <li>
+                <li className="text-white">
                   <a
                     href="#features"
-                    className="text-decoration-none text-dark"
+                    className="text-decoration-none text-white"
                   >
                     Features
                   </a>
@@ -56,7 +57,7 @@ const Footer = () => {
             {/* <div className="col-md-6"><h3>Section</h3></div> */}
           </div>
           <div className="col-md-4">
-            <h3 className="text-center">Share Your Query</h3>
+            <h3 className="text-center text-white">Share Your Query</h3>
             <div className="">
               <input
                 className="form-control mb-2"
@@ -80,10 +81,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr />
-        <div className="row align-items-center">
+        <div className="row align-items-center mt-2">
           <div className="col-md-6 text-center text-md-start">
-            <p className="mb-2">
+            <p className="mb-2 text-white">
               &copy; {year}{" "}
               <a href="" className="text-decoration-none">
                 <span className="text-success">Med Connect</span>
@@ -93,25 +93,25 @@ const Footer = () => {
           <div className="col-md-6 text-center text-md-end">
             <div className="d-flex justify-content-center justify-content-md-end gap-3">
               <a
-                className="bi bi-linkedin text-dark fs-4"
+                className="bi bi-linkedin text-white fs-4"
                 href="https://www.linkedin.com/in/ruturaj-jadhav-0a250821b/"
                 aria-label="LinkedIn"
                 target="_blank"
               ></a>
               <a
-                className="bi bi-github text-dark fs-4"
+                className="bi bi-github text-white fs-4"
                 href="https://github.com/ruturajjadhav07"
                 aria-label="GitHub"
                 target="_blank"
               ></a>
               <a
-                className="bi bi-twitter-x text-dark fs-4"
+                className="bi bi-twitter-x text-white fs-4"
                 href="https://x.com/spoiidermon"
                 aria-label="Twitter"
                 target="_blank"
               ></a>
               <a
-                className="bi bi-instagram text-dark fs-4"
+                className="bi bi-instagram text-white fs-4"
                 href="https://www.instagram.com/ruturajj_0  7/"
                 aria-label="Instagram"
                 target="_blank"
